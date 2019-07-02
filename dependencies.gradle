@@ -1,0 +1,41 @@
+ext.googleLibs = [
+        material        : "com.google.android.material:material:1.1.0-alpha06",
+        appCompact      : "androidx.appcompat:appcompat:1.0.2",
+        core            : "androidx.core:core-ktx:1.0.2",
+        constraintLayout: "androidx.constraintlayout:constraintlayout:1.1.3",
+]
+
+ext.daggerLibs = [
+        dagger              : "com.google.dagger:dagger:2.23.",
+        daggerAndroid       : "com.google.dagger:dagger-android:2.23.2",
+        daggerAndroidSupport: "com.google.dagger:dagger-android-support:2.23.2"
+]
+
+ext.kotlinProcessor = [
+        daggerCompiler : "com.google.dagger:dagger-compiler:2.23.2",
+        daggerProcessor: "com.google.dagger:dagger-android-processor:2.23.2",
+        moshiProcessor : "com.squareup.moshi:moshi-kotlin-codegen:1.8.0"
+]
+
+ext.networkLibs = [
+        okHttp           : "com.squareup.okhttp3:okhttp:4.0.0",
+        okHttpInterceptor: "com.squareup.okhttp3:logging-interceptor:4.0.0",
+        moshi            : "com.squareup.moshi:moshi-kotlin:1.8.0",
+        retrofit         : "com.squareup.retrofit2:retrofit:2.6.0",
+        retrofitConvertor: "com.squareup.retrofit2:converter-moshi:2.4.0",
+]
+
+
+ext.testLibs = [
+        junit: "junit:junit:4.12"
+]
+
+ext.androidTestLibs = [
+        runner  : "androidx.test:runner:1.2.0",
+        expresso: "androidx.test.espresso:espresso-core:3.2.0"
+]
+
+
+
+
+
