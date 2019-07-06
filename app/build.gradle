@@ -14,7 +14,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "BASE_URL", "https://pixabay.com/api/"
+        buildConfigField "String", "BASE_URL", '"https://pixabay.com/api/"'
+        buildConfigField "String", "API_KEY", getApiKey()
 
     }
     buildTypes {
@@ -32,22 +33,9 @@ dependencies {
     implementation googleLibs.values()
     implementation daggerLibs.values()
     implementation networkLibs.values()
+    implementation rxjava.values()
     testImplementation testLibs.values()
     kapt kotlinProcessor.values()
     androidTestImplementation androidTestLibs.values()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
