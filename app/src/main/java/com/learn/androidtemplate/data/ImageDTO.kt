@@ -14,6 +14,7 @@ data class ImageDTO(
 
 )
 
+@JsonClass(generateAdapter = true)
 data class ImageResponse(
     @Json(name ="hits") val hits:Array<ImageDTO>
 )

@@ -1,9 +1,14 @@
 package com.learn.androidtemplate
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.android.support.DaggerAppCompatActivity
+import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity() {
+
+
+    @Inject
+    lateinit var value:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
