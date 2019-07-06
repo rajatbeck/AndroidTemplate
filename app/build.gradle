@@ -39,6 +39,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation googleLibs.values()
+    implementation androidArch.values()
     implementation daggerLibs.values()
     implementation networkLibs.values()
     implementation rxjava.values()

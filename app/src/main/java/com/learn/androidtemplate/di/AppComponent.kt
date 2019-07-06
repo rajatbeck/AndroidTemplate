@@ -2,7 +2,6 @@ package com.learn.androidtemplate.di
 
 import android.app.Application
 import com.learn.androidtemplate.AndroidTemplateApp
-import com.learn.androidtemplate.network.ActivityModule
 import com.learn.androidtemplate.network.AppModule
 import com.learn.androidtemplate.network.NetworkModule
 import dagger.BindsInstance
@@ -15,10 +14,11 @@ import dagger.android.support.AndroidSupportInjectionModule
         AndroidSupportInjectionModule::class,
         NetworkModule::class,
         AppModule::class,
-        ActivityModule::class
+        ActivityModule::class,
+        ViewModelModule::class
     ]
 )
-interface AppComponent:AndroidInjector<AndroidTemplateApp>{
+interface AppComponent : AndroidInjector<AndroidTemplateApp> {
 
     @Component.Builder
     interface Builder {

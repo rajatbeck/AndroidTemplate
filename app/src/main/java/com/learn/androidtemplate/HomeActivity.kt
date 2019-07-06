@@ -4,11 +4,8 @@ import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
-class MainActivity : DaggerAppCompatActivity() {
+class HomeActivity : DaggerAppCompatActivity() {
 
-
-    @Inject
-    lateinit var value:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

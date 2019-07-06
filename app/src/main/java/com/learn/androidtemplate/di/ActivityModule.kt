@@ -1,6 +1,6 @@
-package com.learn.androidtemplate.network
+package com.learn.androidtemplate.di
 
-import com.learn.androidtemplate.MainActivity
+import com.learn.androidtemplate.HomeActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,5 +8,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityModule{
 
     @ContributesAndroidInjector(modules = [])
-    abstract fun providesMainActivity():MainActivity
+    abstract fun providesHomeActivity():HomeActivity
 }
