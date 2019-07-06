@@ -14,9 +14,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "BASE_URL", "https://pixabay.com/api/"
+        buildConfigField "String", "BASE_URL", '"https://pixabay.com/api/"'
+        buildConfigField "String", "API_KEY", getApiKey()
 
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,29 +28,22 @@ android {
     }
 }
 
+
+def getApiKey(){
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+    properties.getProperty("apiKey")
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
     implementation googleLibs.values()
     implementation daggerLibs.values()
     implementation networkLibs.values()
+    implementation rxjava.values()
     testImplementation testLibs.values()
     kapt kotlinProcessor.values()
     androidTestImplementation androidTestLibs.values()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
