@@ -1,7 +1,7 @@
 package com.learn.androidtemplate.network
 
-import com.learn.androidtemplate.Api
 import com.learn.androidtemplate.BuildConfig
+import com.learn.androidtemplate.network.home.HomeApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -28,13 +28,13 @@ class NetworkModule {
         .build()
 
     @Provides
-    fun providesRetrofit(okHttpClient: OkHttpClient) = Retrofit.Builder()
+    fun providesRetrofit(okHttpClient: OkHttpClient):Retrofit = Retrofit.Builder()
         .client(okHttpClient)
         .addConverterFactory(MoshiConverterFactory.create())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-        .baseUrl(BuildConfig.BASE_URL).build()
+        .baseUrl(BuildConfig.BASE_URL)
+        .build()
 
-    @Provides
-    fun providesApi(retrofit: Retrofit) = retrofit.create(Api::class.java)
+
 
 }
