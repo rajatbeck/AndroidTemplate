@@ -1,7 +1,7 @@
 package com.learn.androidtemplate.di.home
 
 import com.learn.androidtemplate.network.home.HomeApi
-import com.learn.androidtemplate.repository.AppDatabase
+import com.learn.androidtemplate.db.AppDatabase
 import com.learn.androidtemplate.repository.HomeRepository
 import dagger.Module
 import dagger.Provides

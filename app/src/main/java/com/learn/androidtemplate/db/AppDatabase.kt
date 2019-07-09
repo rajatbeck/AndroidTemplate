@@ -1,8 +1,9 @@
-package com.learn.androidtemplate.repository
+package com.learn.androidtemplate.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import javax.inject.Inject
+import com.learn.androidtemplate.db.Feed
+import com.learn.androidtemplate.db.FeedDao
 
 @Database(entities = arrayOf(Feed::class), version = 1)
 abstract class AppDatabase () : RoomDatabase() {

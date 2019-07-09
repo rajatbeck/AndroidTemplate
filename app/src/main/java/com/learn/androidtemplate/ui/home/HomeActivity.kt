@@ -1,4 +1,4 @@
-package com.learn.androidtemplate.home
+package com.learn.androidtemplate.ui.home
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProviders
@@ -8,7 +8,6 @@ import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
 class HomeActivity : DaggerAppCompatActivity() {
-
 
     @Inject
     lateinit var viewModelFactory: ViewModelFactory

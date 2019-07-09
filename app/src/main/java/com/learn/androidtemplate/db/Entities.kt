@@ -1,4 +1,4 @@
-package com.learn.androidtemplate.repository
+package com.learn.androidtemplate.db
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
