@@ -2,9 +2,7 @@ package com.learn.androidtemplate.di
 
 import android.app.Application
 import androidx.room.Room
-import com.learn.androidtemplate.network.home.HomeApi
-import com.learn.androidtemplate.repository.AppDatabase
-import com.learn.androidtemplate.repository.HomeRepository
+import com.learn.androidtemplate.db.AppDatabase
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

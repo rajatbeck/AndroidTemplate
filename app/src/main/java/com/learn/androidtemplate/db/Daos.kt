@@ -1,4 +1,4 @@
-package com.learn.androidtemplate.repository
+package com.learn.androidtemplate.db
 
 import androidx.room.Dao
 import androidx.room.Insert

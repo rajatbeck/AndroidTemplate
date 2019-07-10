@@ -10,5 +10,8 @@ interface HomeApi {
     @GET("?")
     fun getImages(@Query("key") apiKey: String = BuildConfig.API_KEY,
                   @Query("q") query: String,
-                  @Query("image_type") imageType:String="photo"): Single<ImageResponse>
+                  @Query("image_type") imageType:String="photo",
+                  @Query("page") page:Int=1,
+                  @Query("per_page") perPage:Int=20
+    ): Single<ImageResponse>
 }

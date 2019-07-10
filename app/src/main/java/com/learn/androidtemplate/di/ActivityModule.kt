@@ -2,7 +2,7 @@ package com.learn.androidtemplate.di
 
 import com.learn.androidtemplate.di.home.HomeModule
 import com.learn.androidtemplate.di.home.HomeViewModelModule
-import com.learn.androidtemplate.home.HomeActivity
+import com.learn.androidtemplate.ui.home.HomeActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
