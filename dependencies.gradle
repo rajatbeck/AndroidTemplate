@@ -12,10 +12,11 @@ ext.daggerLibs = [
 ]
 
 ext.kotlinProcessor = [
-        daggerCompiler : "com.google.dagger:dagger-compiler:2.23.2",
-        daggerProcessor: "com.google.dagger:dagger-android-processor:2.23.2",
-        moshiProcessor : "com.squareup.moshi:moshi-kotlin-codegen:1.8.0",
-        lifcycleCompiler: "androidx.lifecycle:lifecycle-compiler:2.0.0"
+        daggerCompiler  : "com.google.dagger:dagger-compiler:2.23.2",
+        daggerProcessor : "com.google.dagger:dagger-android-processor:2.23.2",
+        moshiProcessor  : "com.squareup.moshi:moshi-kotlin-codegen:1.8.0",
+        lifcycleCompiler: "androidx.lifecycle:lifecycle-compiler:2.0.0",
+        roomProcessor:"androidx.room:room-compiler:2.1.0"
 ]
 
 ext.networkLibs = [
@@ -35,6 +36,15 @@ ext.rxjava = [
 ext.androidArch = [
         lifecycleExtension: "androidx.lifecycle:lifecycle-extensions:2.0.0",
         reactiveStream    : "androidx.lifecycle:lifecycle-reactivestreams:2.0.0"
+]
+
+ext.paging = [
+        paging :"androidx.paging:paging-runtime-ktx:2.1.0-rc01"
+]
+
+ext.room = [
+        roomRuntime: "androidx.room:room-runtime:2.1.0",
+        roomRxJava : "androidx.room:room-rxjava2:2.1.0"
 ]
 
 ext.testLibs = [

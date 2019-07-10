@@ -43,6 +43,8 @@ dependencies {
     implementation daggerLibs.values()
     implementation networkLibs.values()
     implementation rxjava.values()
+    implementation room.values()
+    implementation paging.values()
     testImplementation testLibs.values()
     kapt kotlinProcessor.values()
     androidTestImplementation androidTestLibs.values()
