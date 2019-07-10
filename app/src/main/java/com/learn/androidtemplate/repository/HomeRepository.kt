@@ -23,7 +23,7 @@ class HomeRepository @Inject constructor(private val homeApi: HomeApi, private v
 
 
     fun getPagedFeeds(): Flowable<PagedList<Feed>> {
-        return RxPagedListBuilder(db.feedDao().getAllFeed(), 20)
+        return RxPagedListBuilder(db.feedDao().getAllFeed(), 10)
             .setBoundaryCallback(FeedBoundaryCallback(this::fetchAndInsertFeed))
             .buildFlowable(BackpressureStrategy.BUFFER)
     }

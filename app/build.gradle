@@ -17,6 +17,8 @@ android {
         buildConfigField "String", "BASE_URL", '"https://pixabay.com/api/"'
         buildConfigField "String", "API_KEY", getApiKey()
 
+        multiDexEnabled true
+
     }
 
 
@@ -45,6 +47,8 @@ dependencies {
     implementation rxjava.values()
     implementation room.values()
     implementation paging.values()
+    implementation glide.values()
+    debugImplementation debugDeps.values()
     testImplementation testLibs.values()
     kapt kotlinProcessor.values()
     androidTestImplementation androidTestLibs.values()
