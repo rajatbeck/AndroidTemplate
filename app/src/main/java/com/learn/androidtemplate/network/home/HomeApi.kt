@@ -12,6 +12,6 @@ interface HomeApi {
                   @Query("q") query: String,
                   @Query("image_type") imageType:String="photo",
                   @Query("page") page:Int=1,
-                  @Query("per_page") perPage:Int=20
+                  @Query("per_page") perPage:Int=10
     ): Single<ImageResponse>
 }

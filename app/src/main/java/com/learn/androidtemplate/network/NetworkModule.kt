@@ -1,5 +1,6 @@
 package com.learn.androidtemplate.network
 
+import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.learn.androidtemplate.BuildConfig
 import com.learn.androidtemplate.network.home.HomeApi
 import com.squareup.moshi.Moshi
@@ -20,6 +21,7 @@ class NetworkModule {
     @Singleton
     fun providesOkHttp(): OkHttpClient = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor())
+        .addNetworkInterceptor(StethoInterceptor())
         .build()
 
     @Provides
