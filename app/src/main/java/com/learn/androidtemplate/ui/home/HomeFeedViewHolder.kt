@@ -9,7 +9,10 @@ import kotlinx.android.synthetic.main.row_feed_layout.view.*
 class HomeFeedViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
     fun bind(feed: Feed?) = run {
-        Glide.with(itemView.context).load(feed?.webFormatURL).into(itemView.ivFeed)
+        Glide.with(itemView.context)
+//            .setDefaultRequestOptions()
+            .load(feed?.webFormatURL)
+            .into(itemView.ivFeed)
     }
 
 }
