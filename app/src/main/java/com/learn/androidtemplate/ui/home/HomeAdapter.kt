@@ -5,11 +5,12 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.RequestManager
 import com.learn.androidtemplate.R
 import com.learn.androidtemplate.db.Feed
 import com.learn.androidtemplate.ui.NetworkState
 
-class HomeAdapter( private val retryCallback: () -> Unit) : PagedListAdapter<Feed, RecyclerView.ViewHolder>(diffUtil) {
+class HomeAdapter(private val retryCallback: () -> Unit) : PagedListAdapter<Feed, RecyclerView.ViewHolder>(diffUtil) {
 
     companion object {
         private val diffUtil = object : DiffUtil.ItemCallback<Feed>() {

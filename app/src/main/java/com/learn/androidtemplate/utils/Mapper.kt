@@ -12,5 +12,10 @@ fun FeedDTO.toDb() =
         userId = this.userId,
         userImageURL = this.userImageURL,
         imageWidth = this.imageWidth,
-        imageHeight = this.imageHeight
+        imageHeight = this.imageHeight,
+        views = this.views,
+        downloads = this.downloads,
+        favorites = this.favorites,
+        likes = this.likes,
+        comments = this.comments
     )

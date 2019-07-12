@@ -13,5 +13,10 @@ data class Feed(
     @ColumnInfo(name = "webformatURL") val webFormatURL: String,
     @ColumnInfo(name = "user_image_url") val userImageURL: String,
     @ColumnInfo(name = "image_width") val imageWidth: Int,
-    @ColumnInfo(name = "image_height") val imageHeight: Int
+    @ColumnInfo(name = "image_height") val imageHeight: Int,
+    @ColumnInfo(name = "views") val views: Int,
+    @ColumnInfo(name = "downloads") val downloads: Int,
+    @ColumnInfo(name = "favorites") val favorites: Int,
+    @ColumnInfo(name = "likes") val likes: Int,
+    @ColumnInfo(name = "comments") val comments: Int
 )
