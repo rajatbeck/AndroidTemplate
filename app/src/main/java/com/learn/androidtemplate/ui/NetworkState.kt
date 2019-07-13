@@ -1,4 +1,4 @@
-package com.learn.androidtemplate.network
+package com.learn.androidtemplate.ui
 
 enum class Status {
     RUNNING,

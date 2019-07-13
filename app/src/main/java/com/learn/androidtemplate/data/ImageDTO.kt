@@ -12,8 +12,13 @@ data class FeedDTO(
     @Json(name = "webformatURL") val webFormatURL: String,
     @Json(name = "userImageURL") val userImageURL: String,
     @Json(name = "imageWidth") val imageWidth: Int,
-    @Json(name = "imageHeight") val imageHeight: Int
-)
+    @Json(name = "imageHeight") val imageHeight: Int,
+    @Json(name = "views") val views: Int,
+    @Json(name = "downloads") val downloads: Int,
+    @Json(name = "favorites") val favorites: Int,
+    @Json(name = "likes") val likes: Int,
+    @Json(name = "comments") val comments: Int
+    )
 
 @JsonClass(generateAdapter = true)
 data class ImageResponse(
