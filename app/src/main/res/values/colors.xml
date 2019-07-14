@@ -7,4 +7,5 @@
     <color name="darkGrey">#e8e8e8</color>
     <color name="divider">#1EFFFFFF</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 </resources>

@@ -55,7 +55,7 @@ class HomeFeedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             .into(itemView.profilePic)
 
         itemView.tvUserName.text = feed?.user
-        itemView.likeCount.text = "${feed?.likes} likes"
+        itemView.likeCount.text = "${feed?.likes}"
     }
 
 }

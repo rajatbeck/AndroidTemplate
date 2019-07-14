@@ -1,6 +1,7 @@
 package com.learn.androidtemplate.ui.home
 
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.paging.PagedList
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.learn.androidtemplate.R
 import com.learn.androidtemplate.db.Feed
 import com.learn.androidtemplate.ui.NetworkState
+import com.learn.androidtemplate.utils.DividerItemDecoration
 import com.learn.androidtemplate.utils.ViewModelFactory
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -31,6 +33,7 @@ class HomeActivity : DaggerAppCompatActivity() {
         }
         rvList.apply {
             layoutManager = LinearLayoutManager(this@HomeActivity)
+            addItemDecoration(DividerItemDecoration(ContextCompat.getDrawable(this@HomeActivity,R.drawable.line_divider)))
             adapter = homeAdapter
         }
 
