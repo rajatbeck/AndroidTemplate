@@ -27,6 +27,7 @@ class HomeActivity : DaggerAppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.title = getString(R.string.feeds)
         model = ViewModelProviders.of(this, viewModelFactory).get(HomeActivityViewModel::class.java)
         homeAdapter = HomeAdapter {
             model.retry()
