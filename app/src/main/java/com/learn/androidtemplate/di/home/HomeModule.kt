@@ -18,8 +18,4 @@ class HomeModule {
     @Provides
     fun providesApi(retrofit: Retrofit): HomeApi = retrofit.create(HomeApi::class.java)
 
-    @Provides
-    fun providesHomeAdapter(): HomeAdapter = HomeAdapter()
-
-
 }
